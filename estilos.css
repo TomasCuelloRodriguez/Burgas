@@ -179,6 +179,28 @@ section{
     border-color: transparent;
 }
 
+@media only screen and (min-width:280px) {
+    .carousel-inner img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .carousel-inner img {
+        width: 600px;
+        height: 600px;
+    }
+    
+}
+
+@media only screen and (min-width:1024px) {
+    .carousel-inner img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
 .carousel-caption {
     top:0;
     bottom:auto;
@@ -197,38 +219,6 @@ section{
     text-shadow:var(--neonskyblue--color);
     font-family: neonDos;
 }
-.burgerind1{
-    background-size: cover;
-    width: 1000px;
-    height: 500px;
-}
-.burgerind2{
-    background-size: cover;
-    width: 1000px;
-    height: 500px;
-}
-
-.burgerind3{
-    background-size: cover;
-    width: 1000px;
-    height: 500px;
-}
-
-.burgerind4{
-    background-size: cover;
-    width: 1000px;
-    height: 500px;
-}
-
-.burgerind5{
-    background-size: cover;
-    width: 1000px;
-    height: 500px;
-}
-.burgersindimg{
-    height: 380px;
-}
-
 
 .neon{
     color: rgb(255, 255, 255);
@@ -247,8 +237,6 @@ section{
     font-family: neonDos;
     font-size: 50px;
 }
-
-
 
 .beers{
     min-height: 100%;
@@ -269,24 +257,35 @@ section{
     width: 580px;
     height: 580px;
 }
-@media only screen and (min-width: 280px){
-    #antind{
-    font-size: 50px;
-    text-decoration: none;
+
+@media only screen and (min-width:280px) {
+    .carouselimgind img {
+        width: 400px;
+        height: 400px;
     }
-    #strangeind{
-        font-size: 50px;
-        text-decoration: none;
+}
+
+@media only screen and (max-width:480px) {
+    .carouselimgind img {
+        width: 600px;
+        height: 600px;
     }
     
+}
+
+#antind{
+    font-size: 65px;
+    text-decoration: none;
+}
+#strangeind{
+    font-size: 65px;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 1024px){
     .beers{
         grid-template-columns: 1fr 1fr;
-    }
-
-    
+    }    
     .beerlogoind1{
         grid-column: 1/1;
         grid-row: 1/4;
@@ -393,6 +392,7 @@ section{
     .burgersmenu1{
         grid-template-columns: 1fr;
     }
+
 
 }
 
@@ -502,6 +502,11 @@ section{
     }
     
 }
+.guarnicionneon{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 5%;
+}
 
 .guarnicion{
     display: grid;
@@ -514,18 +519,19 @@ section{
     padding-left: 10px;
     border-radius: 20px;
 }
-
-
-.boxbirra{
-    display: flex;
-    align-items: center;
+.preciosguar{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: var(--neonskyblue--color);
+    margin-bottom: 10%;
 }
+.birrasneon{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 5%;
 
-.columnbirra{
-    display: flex;
-    align-items: center;
 }
-
 .columnbirra img {
     vertical-align: middle;
     max-width: 15%;
@@ -537,10 +543,22 @@ section{
     text-align: center;
     color: #fff;
     text-shadow: var(--neonskyblue--color);
-    margin-bottom: 10%;
 }
-
-
+.birrasbirra{
+    height: 400px;
+    width: 400px;
+    margin: 10%;
+}
+.neonbirras{
+    font-size: 25px;
+    font-family:'Lucida Sans';
+    text-shadow: var(--neonskyblue--color);
+    color: #fff;
+    text-align: center;
+}
+.birrasbirras{
+    align-items: center;
+}
 #reserva{
     text-align: center;
     font-size: 80px;
