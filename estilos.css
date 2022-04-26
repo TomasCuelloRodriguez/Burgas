@@ -43,7 +43,7 @@
 
 
 *{
-    margin: 10px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -234,15 +234,14 @@ section{
     opacity: 0;
     color: rgb(255, 255, 255);
     text-shadow:var(--neonskyblue--color);
-    font-family: neonDos;
-    font-size: 50px;
+    font-family: 'Lucida Sans';
+    font-size: 25px;
 }
 
 .beers{
     min-height: 100%;
     width: 100%;
     display: grid;
-    gap: 30px;
 }
 
 .carouselimgind:hover img{
@@ -250,8 +249,6 @@ section{
 }   
 .carouselimgind:hover .neoncarouselb{
     opacity: 1;
-    top: 50%;
-    left: 50%;
 }
 .carouselimgind img{
     width: 580px;
@@ -530,24 +527,18 @@ section{
     text-align: center;
     font-size: 80px;
     margin-bottom: 5%;
-
 }
-.columnbirra img {
-    vertical-align: middle;
-    max-width: 15%;
-    max-height: 15%;
 
-}
 .preciosbirra{
     font-size: 30px;
     text-align: center;
     color: #fff;
     text-shadow: var(--neonskyblue--color);
+    margin-bottom: 5%;
 }
 .birrasbirra{
-    height: 400px;
-    width: 400px;
-    margin: 10%;
+    max-width: 278px;
+    max-height: 330px;
 }
 .neonbirras{
     font-size: 25px;
@@ -555,9 +546,6 @@ section{
     text-shadow: var(--neonskyblue--color);
     color: #fff;
     text-align: center;
-}
-.birrasbirras{
-    align-items: center;
 }
 #reserva{
     text-align: center;
