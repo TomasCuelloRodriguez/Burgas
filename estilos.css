@@ -102,14 +102,25 @@ header h1 a{
 header span{ 
     animation: blink linear infinite 1.5s;
 }
-@media only screen and (max-width: 479px){
+strong{
+    color:rgb(255, 255, 255) ;
+    font-size: 50px;
+    letter-spacing: 0.3em ;
+}
+@media only screen and(min-width:200px) and (max-width:478px){
     header h1{
-        font-size: 90px;
+        font-size: 50px;
+    }
+    strong{
+        font-size: 30px;
     }
 }
 @media only screen and (max-width: 768px){
     header h1{
-        font-size: 90px;
+        font-size: 80px;
+    }
+    strong{
+        font-size: 30px;
     }
 }
 header ul li{
@@ -148,13 +159,9 @@ header ul li :hover ul{
 	list-style: none;
     text-shadow: var(--neonskyblue--color);
     font-family: neonDos;
-	}
-
-strong{
-    color:rgb(255, 255, 255) ;
-    font-size: 50px;
-    letter-spacing: 0.3em ;
 }
+
+
 
 header .menu :hover{
     color: rgb(255, 255, 255);
@@ -305,14 +312,9 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
 }
 .locate p{
     font-size: 25px;
-    padding-right: 200px;
-    padding-left: 200px;
-    padding-top: 50px;
-    padding-bottom: 20px;
     text-shadow: var(--neonskyblue--color);
     color: #fff;
 }
@@ -322,9 +324,11 @@ section{
 }
 #donde{
     font-size: 60px;
+    margin: 5%;
 }
 #time{
     font-size: 50px;
+    margin: 5%;
 }
 
 #menuneon{
@@ -566,6 +570,17 @@ label {
     width: 30%;
     text-align: right;
 }
+button.enviar{
+    background-color: transparent;
+    text-shadow: var(--neonskyblue--color);
+    color: #fff;
+}
+
+button.enviar:hover{
+    background-color: black;
+    text-shadow: var(--neonpinktwo--color);
+    color: #fff;
+}
 
 label+input {
     width: 30%;
@@ -573,26 +588,43 @@ label+input {
 }
 
 
-.fotosnos{
-    align-items: center;
-    height: 500px;
-    display: flex;
-}
-
-.fotosnos img {
-    width: 20%;
+.fotonosotros {
+    margin: 5%;
+    width: 100%;
     height: 500px;
     max-height: 50%;
-    object-fit: cover;
+    border: #000;
+    border-radius: 10%;
 }
-
 .texto{
-    font-family:neonDos;
+    font-family:'Lucilda sans';
     color:#fff;
     text-align: center;
     text-shadow: var(--neonskyblue--color);
-    font-size: 20px;
+    font-size: 30px;
+    margin: 5%;
 }
+
+
+@media only screen and (min-width:200px) and (max-width:500px) {
+    .fotonosotros {
+        margin: 5%;
+        width: 300px;
+        height: 300px;
+    }
+    .nosotroslocate{
+        width:400px ;
+        height:300px;
+    }
+    #reserva{
+        font-size: 60px;
+    }
+    #donde{
+        font-size: 40px;
+    }
+    
+}
+
 
 .subir{
     font-size: 50px;
