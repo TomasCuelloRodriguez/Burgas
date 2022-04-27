@@ -185,6 +185,27 @@ section{
     border-radius: 40px;
     border-color: transparent;
 }
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-image: none;
+    
+}
+.carousel-control-next-icon:after{
+    content: '>';
+    font-size: 55px;
+    font-weight:1000;
+    color:white;
+    text-shadow: var(--neongreen--color);
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    font-weight:1000;
+    color: white;
+    text-shadow: var(--neongreen--color);
+}
 
 @media only screen and (min-width:280px) {
     .carousel-inner img {
